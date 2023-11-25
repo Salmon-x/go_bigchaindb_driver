@@ -14,8 +14,8 @@ package main
 import (
 	"crypto/ed25519"
 	"fmt"
-	cl "github.com/Salmon-x/go_bigchaindb_driver/pkg/client"
-	txn "github.com/Salmon-x/go_bigchaindb_driver/pkg/transaction"
+	cl "github.com/Salmon-x/go_bigchaindb_driver/client"
+	txn "github.com/Salmon-x/go_bigchaindb_driver/transaction"
 )
 
 func main()  {
@@ -58,7 +58,7 @@ func main()  {
 		panic(err)
 	}
 	// Sign the transaction
-	err = tx.Sign([]*txn.KeyPair{key})
+	err = tx.Sign([]*txn.KeyPair{alice})
 	if err != nil {
 		panic(err)
 	}
