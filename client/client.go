@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/pkg/errors"
-	"go_bdb_driver/pkg/transaction"
+	"go_bdb_driver/transaction"
 )
 
 type Client struct {

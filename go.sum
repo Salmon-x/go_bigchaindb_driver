@@ -40,8 +40,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/PromonLogicalis/asn1 v0.0.0-20190312173541-d60463189a56 h1:zL3Ph7RCZadAPb7QV0gMIDmjuZHFawNhoPZ5erh6TRw=
 github.com/PromonLogicalis/asn1 v0.0.0-20190312173541-d60463189a56/go.mod h1:nE9BGpMlMfM9Z3U+P+mWtcHNDwHcGctalMx1VTkODAY=
-github.com/bigchaindb/go-bigchaindb-driver v0.0.0-20180817112319-4e8033be7f5b h1:C35tYf5wk0PRlnwBQbdv2FuPan3HRGkJLWc6/wq/2zk=
-github.com/bigchaindb/go-bigchaindb-driver v0.0.0-20180817112319-4e8033be7f5b/go.mod h1:6f6Cp+AVM+cznPl3wW60jKrjdg6BSWmnncFLUoUef74=
+go_bdb_driver v0.0.0-20180817112319-4e8033be7f5b h1:C35tYf5wk0PRlnwBQbdv2FuPan3HRGkJLWc6/wq/2zk=
+go_bdb_driver v0.0.0-20180817112319-4e8033be7f5b/go.mod h1:6f6Cp+AVM+cznPl3wW60jKrjdg6BSWmnncFLUoUef74=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=

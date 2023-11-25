@@ -3,10 +3,8 @@ module github.com/Salmon-x/go_bigchaindb_driver
 go 1.20
 
 require (
-	github.com/bigchaindb/go-bigchaindb-driver v0.0.0-20180817112319-4e8033be7f5b
 	github.com/go-interledger/cryptoconditions v0.0.0-20180612102545-aba58e59cef1
 	github.com/jbenet/go-base58 v0.0.0-20150317085156-6237cf65f3a6
-	github.com/kalaspuffar/base64url v0.0.0-20171121144659-483af17b794c
 	github.com/mr-tron/base58 v1.2.0
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/viper v1.17.0
@@ -19,6 +17,7 @@ require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/kalaspuffar/base64url v0.0.0-20171121144659-483af17b794c // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.0 // indirect

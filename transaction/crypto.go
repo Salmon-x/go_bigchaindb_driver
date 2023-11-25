@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"crypto/sha256"
 	"fmt"
-	"go_bdb_driver/pkg/base58"
-	"go_bdb_driver/pkg/base64url"
+	"go_bdb_driver/base58"
+	"go_bdb_driver/base64url"
 	"golang.org/x/crypto/sha3"
 	"strconv"
 
