@@ -7,8 +7,8 @@ import (
 
 	"fmt"
 
+	"github.com/Salmon-x/go_bigchaindb_driver/transaction"
 	"github.com/pkg/errors"
-	"go_bdb_driver/transaction"
 )
 
 type Client struct {
