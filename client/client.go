@@ -31,7 +31,6 @@ func New(config ClientConfig) (*Client, error) {
 		baseHeader: http.Header{},
 	}
 
-	// Set API Key & Secret header
 	for k, v := range config.Headers {
 		client.baseHeader.Set(k, v)
 	}
@@ -113,10 +112,12 @@ func (c *Client) ListOutputs(pubKey string, spent bool) ([]transaction.OutputLoc
 
 func (c *Client) ListTransactions(assetID, operation string) ([]transaction.Transaction, error) {
 	var txns []transaction.Transaction
+	queryParam := make(map[string]string)
+	queryParam["asset_id"] = assetID
+	queryParam["operation"] = operation
+	path := "transactions"
 
-	path := fmt.Sprintf("transactions?asset_id=%s?%s", assetID, operation)
-
-	req, err := c.newRequest("GET", path, nil)
+	req, err := c.newRequest("GET", path, queryParam)
 	if err != nil {
 		return txns, errors.Wrap(err, "Could not create http request")
 	}
@@ -167,7 +168,6 @@ func (c *Client) PostTransactionSync(txn *transaction.Transaction) error {
 		return errors.Wrap(err, "Request unsuccessful")
 	}
 
-	// FIXME make sure that returned txn decodes output public keys as []byte instead of []string
 	return nil
 }
 
@@ -184,11 +184,9 @@ func (c *Client) PostTransactionCommit(txn *transaction.Transaction) error {
 		return errors.Wrap(err, "Request unsuccessful")
 	}
 
-	// FIXME make sure that returned txn decodes output public keys as []byte instead of []string
 	return nil
 }
 
-// TODO add search string to request
 func (c *Client) SearchAsset(search string, limit int) ([]transaction.Asset, error) {
 	var assets []transaction.Asset
 

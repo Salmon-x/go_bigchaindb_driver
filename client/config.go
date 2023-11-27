@@ -2,10 +2,9 @@ package client
 
 import (
 	"flag"
-	"io"
-
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
+	"io"
 )
 
 type ClientConfig struct {
@@ -20,11 +19,12 @@ type Options struct {
 	cfgType string
 	readers []io.Reader
 
-	// TODO review viper package
 	viper *viper.Viper
 }
 
 type OptionFunc func(*Options) error
+
+// 暂时用不着读取单独的文件
 
 func Load(cfg interface{}, optFuncs ...OptionFunc) error {
 	var err error
